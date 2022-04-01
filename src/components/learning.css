@@ -1,0 +1,77 @@
+.learning-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.accordion-parent {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 0;
+    background: #edeef1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    
+}
+
+.accordion {
+    width: 100%;
+    max-width: 540px;
+    margin: 1.8rem auto;
+    color: #fff;
+}
+
+.accordion-heading .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-heading {
+    background: #3f475d;
+    padding: 1.4rem 0;
+    font-size: 2rem;
+}
+
+.accordion-heading p{
+    letter-spacing: .12rem;
+    font-weight: 600;
+}
+
+.accordion-heading-icon{
+    cursor: pointer;
+}
+
+.accordion-content {
+    background: #383a7f;
+
+    height: 0;
+    opacity: 0;
+
+    display: flex;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+}
+
+.accordion-content.show {
+    height: 18rem;
+    opacity: 1;
+}
+
+.accordion-content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
