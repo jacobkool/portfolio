@@ -63,9 +63,17 @@ body {
 }
 
 .frameworks {
-  margin: 10rem;
+    margin: 10rem;
     background-color: white;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.projects {
+    margin: 10rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
