@@ -51,7 +51,7 @@ body {
 
 .body {
     display: grid;
-    grid-template-rows: repeat(3, 100vh) 20rem;
+    grid-template-rows: 90rem min-content 90rem;
 }
 
 .about_me {

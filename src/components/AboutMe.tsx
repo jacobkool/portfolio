@@ -51,7 +51,7 @@ const AboutMe: React.FC<Props> = (props) => {
 
                     <div className='card-back'>
                         <div className='card-back-text'>
-                            I attended Azusa Pacific University in Los Angeles. I graduated with a 3.8 GPA in business with the intent of going Pre-Law.
+                            I attended Azusa Pacific University in Los Angeles. I graduated with a 3.8 GPA in business with the intent of going to law school.
                         </div>
                         <button onClick={() => cardFlipper('one')}>Click to flip <GrRotateLeft/></button>
                     </div>
@@ -68,7 +68,7 @@ const AboutMe: React.FC<Props> = (props) => {
 
                     <div className='card-back'>
                         <div className='card-back-text'>
-                            With my brother working as a lawyer, I saw the lifestyle was not something I would be interested in. I was making good money bartending in los angeles and stayed there while I figured things out. I explored other careers including sales, and education. 
+                            With my brother working as a lawyer, I saw the lifestyle was not something I would be interested in. Looking for my passion, I worked in talent management, hospitality, and sales. 
                         </div>
                         <button onClick={() => cardFlipper('two')}>Click to flip <GrRotateLeft/></button>
                     </div>
@@ -78,14 +78,28 @@ const AboutMe: React.FC<Props> = (props) => {
                 <ReactCardFlip isFlipped={isThreeFlipped} flipDirection="horizontal">
                     <div className='card-front'>
                         <div className='card-front-text'>
-                            Software
+                            <div>
+                                Software 
+                            </div>
+                            <div>
+                                +
+                            </div>
+                            <div>
+                                Resume
+                            </div>
                         </div>
                     <button onClick={() => cardFlipper('three')}>Click to flip <GrRotateLeft/></button>
                     </div>
 
                     <div className='card-back'>
                         <div className='card-back-text'>
-                            After holding a variety of jobs, I finally found my passion in Software. As a customer support rep I grew a passion for solving and understanding technical issues, into a career as a Product Support Engineer. 
+                            <div>
+                                <div>
+                                    I finally found my passion in software, which brings a lot of problem solving and critical thinking to my day, and makes everyday exciting. 
+                                </div> 
+                                <div>+</div> 
+                                <a className='resume-link' href='./work_resume/work_resume.pdf' download>Checkout My Resume</a>
+                            </div>   
                         </div>
                         <button onClick={() => cardFlipper('three')}>Click to flip <GrRotateLeft/></button>
                     </div>
@@ -95,14 +109,14 @@ const AboutMe: React.FC<Props> = (props) => {
                 <ReactCardFlip isFlipped={isFourFlipped} flipDirection="horizontal">
                     <div className='card-front'>
                         <div className='card-front-text'>
-                            Hobbies
+                            Fun Fact
                         </div>
                     <button onClick={() => cardFlipper('four')}>Click to flip <GrRotateLeft/></button>
                     </div>
 
                     <div className='card-back'>
                         <div className='card-back-text'>
-                            I love watching movies, some favorites are 'Inside Man' and 'The prestige'. I also love video games, like Hearthstone and Fortnite. Another favorite hobby is taking my dog, Scooby-Doo, on hikes and other adventures.
+                            I am a game show winner. When I was 19 years old I won $28,350 on the CW's 'Oh Sit'. 
                         </div>
                         <button onClick={() => cardFlipper('four')}>Click to flip <GrRotateLeft/></button>
                     </div>
@@ -112,14 +126,18 @@ const AboutMe: React.FC<Props> = (props) => {
                 <ReactCardFlip isFlipped={isFiveFlipped} flipDirection="horizontal">
                     <div className='card-front'>
                         <div className='card-front-text'>
-                            Aspirations
+                            Get in touch
                         </div>
                     <button onClick={() => cardFlipper('five')} >Click to flip <GrRotateLeft/></button>
                     </div>
 
                     <div className='card-back'>
                         <div className='card-back-text'>
-                            My goal is to become a front-end developer at a great software company, whose mission and product align with my passions.
+                            <div>
+                                <a className='prof-links' href="mailto:jacobkool11@gmail.com?subject=Contact%20Jake%20Kool&amp;body=Jake,%0D%0A%0D%0A%0D%0A"> Email me </a>
+                                <div>+</div>
+                                <a className='prof-links' href='www.linkedin.com/in/jacob-kool-a73a3360'>Connect with me on LinkedIn</a>
+                            </div>
                         </div>
                         <button onClick={() => cardFlipper('five')}>Click to flip <GrRotateLeft/></button>
                     </div>
