@@ -19,12 +19,12 @@ const Learning: React.FC<Props> = (props) => {
         HTML: {
             title: 'HTML',
             icon: <DiHtml5/>,
-            text: 'I learned HTML and the beginning of Front-End Development by completing the modules at FreeCodeCamp.org'
+            text: 'I learned HTML and beginner Front-End Development by completing the modules at FreeCodeCamp.org.'
         },
         CSS: {
             title: 'CSS/Sass',
             icon: <DiSass/>,
-            text: 'I learned the bare-bones of CSS via FreeCodeCamp. More recently I have taken the CSS/Sass/Grid/Flebox Masterclass by Jonas Schmedtmann on Udemy.'
+            text: 'I learned the basics of CSS via FreeCodeCamp. More recently I have taken the CSS/Sass/Grid/Flexbox Masterclass by Jonas Schmedtmann on Udemy.'
         },
         JavaScript: {
             title: 'Javascript',
@@ -34,17 +34,17 @@ const Learning: React.FC<Props> = (props) => {
         React: {
             title: 'React',
             icon: <DiReact/>,
-            text: 'I learned React/Hooks/Redux via a Udemy course by Stephen Grider. Throughout learning React is when web development really started to click for me. I have build all projects since taking this course using React.'
+            text: 'I learned React/Hooks/Redux via a Udemy course by Stephen Grider. Learning React is when web development really started to click for me. I have build all projects since taking this course using React.'
         },
         Redux: {
             title: 'Redux',
             icon: <SiRedux/>,
-            text: 'As I looked into building more complex projects, I saw the value in adding Redux as a state management tool. I learned Redux alongside React, and have continued to learn Redux via documentation, training videos, and using it in projects.'
+            text: 'As I looked into building more complex projects, I saw the value in adding Redux as a state management tool. I learned Redux alongside React, and have continued to learn Redux via documentation, StackOverflow, and training videos.'
         },
         TypeScript: {
             title: 'TypeScript',
             icon: <SiTypescript/>,
-            text: 'I learned TypeScript via a Udemy Course in which I used TypeScript building simple applications. I quickly saw the benefit of Typescript and now use it on all of my projects!'
+            text: 'I learned TypeScript via a Udemy Course in which I used TypeScript building simple applications. I quickly saw the benefit of Typescript and now use it on all of my projects, including this page!'
         }
     }
 
