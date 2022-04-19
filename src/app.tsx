@@ -6,15 +6,15 @@ import Projects from './components/Projects'
 import { useRef } from 'react';
 
 const App: React.FC = () => {
-    const aboutMeRef = useRef<HTMLDivElement>(null);
+    const contactMe = useRef<HTMLDivElement>(null);
     const frameworksRef = useRef<HTMLDivElement>(null);
     const portfolioRef = useRef<HTMLDivElement>(null);
 
     const executeScroll = (ref:string) => {
-        if (aboutMeRef.current && frameworksRef.current && portfolioRef.current) {
+        if (contactMe.current && frameworksRef.current && portfolioRef.current) {
         switch(ref) {
             case 'about':
-                aboutMeRef.current.scrollIntoView({block: 'start', behavior: 'smooth'});
+                contactMe.current.scrollIntoView({block: 'start', behavior: 'smooth'});
                 break;
             case 'frameworks':
                 frameworksRef.current.scrollIntoView({block: 'start', behavior: 'smooth'});
@@ -54,23 +54,19 @@ const App: React.FC = () => {
                 <div className='header__jake'>
                     Jake Kool -- Front-End Portfolio
                 </div>
-                <div className='header__about_me' onClick={() => executeScroll('about')}>About Me</div>
                 <div className='header__frameworks' onClick={() => executeScroll('frameworks')}>My Tech Stack && Learning</div>
                 <div className='header__learning' onClick={() => executeScroll('learning')} >Projects</div>
+                <div className='header__about_me' onClick={() => executeScroll('about')}>Contact/Links/About</div>
             </header>
             <div className='body'>
-                <div className='about_me' ref={aboutMeRef}>
-                    <div>About me:</div>
-                    <AboutMe text='THIS IS THE ABOUT ME COMPONENT'/>
-                </div>
                 <div className="frameworks" ref={frameworksRef}>
                     <Learning object={{name: 'Jake', favNumber: 12}}/>
                 </div>
                 <div className="projects" ref={portfolioRef}>
                     <Projects projects={projectsData}/>
                 </div>
-                <div className="footer">
-                    THIS IS THE FOOTER
+                <div className='about_me' ref={contactMe}>
+                    <AboutMe text='THIS IS THE ABOUT ME COMPONENT'/>
                 </div>
             </div>
             
