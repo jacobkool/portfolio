@@ -43,6 +43,7 @@
     height: 100%;
     width: 100%;
     cursor: pointer;
+    color:white;
 
     display: flex;
     justify-content: stretch;
@@ -52,7 +53,7 @@
 .project-link:hover,
 .github-link:hover {
     background: grey;
-    color: purple;
+    color: white;
     font-weight: bold;
 }
 
@@ -63,4 +64,5 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
