@@ -16,10 +16,14 @@ interface Props {
 
 const Projects: React.FC<Props> = (props) => {
 
+    const keyGenerator = () => {
+        return Math.floor(Math.random() * 100)
+    }
+
     const renderList = (projects: ProjectType[]) => {
         return projects.map((item) => {
             return (
-                <div className='project-container'>
+                <div key={keyGenerator()} className='project-container'>
                     <img className='image' src={item.screenshot} alt={item.name}/>
                     <div className='buttons'>
                         <button className='project-link'>
@@ -37,7 +41,7 @@ const Projects: React.FC<Props> = (props) => {
 
     return (
         <div className='carousel-container'>
-            <Carousel>
+            <Carousel isRTL={false}>
                {renderList(props.projects)}
             </Carousel>
         </div>
