@@ -136,7 +136,7 @@ const AboutMe: React.FC<Props> = (props) => {
                             <div>
                                 <a className='prof-links' href="mailto:jacobkool11@gmail.com?subject=Contact%20Jake%20Kool&amp;body=Jake,%0D%0A%0D%0A%0D%0A"> Email me </a>
                                 <div>+</div>
-                                <a className='prof-links' href='www.linkedin.com/in/jacob-kool-a73a3360'>Connect with me on LinkedIn</a>
+                                <a className='prof-links' rel="noreferrer" href='https://www.linkedin.com/in/jacob-kool-a73a3360' target='_blank'>Connect with me on LinkedIn</a>
                             </div>
                         </div>
                         <button onClick={() => cardFlipper('five')}>Click to flip <GrRotateLeft/></button>
